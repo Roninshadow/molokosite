@@ -1,2 +1,52 @@
-/* Стили для страницы Articles */
+@use 'variables' as *;
 
+.articles {
+  padding: 40px 0;
+	.container {
+		.articles-block {
+      padding: 30px;
+      background: $white;
+      border-radius: 20px;
+			.articles__title {
+        text-align: center;
+        @include h2-22;
+        margin-bottom: 40px;
+			}
+			.slider {
+			}
+			.slider-wrapper.articles__list {
+        display: flex;
+        gap: 20px;
+				.articles__item {
+				}
+				.articles__item-image {
+          border-radius: 8px;
+          margin-bottom: 20px;
+				}
+				.articles__item-title {
+          @include med-16;
+				}
+				.articles__item-description {
+          margin-top: 20px;
+          @include reg-14;
+          margin-bottom: 20px;
+				}
+				.articles__item-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+					.articles__item-info-date {
+            @include reg-12;
+            padding: 5px 11px;
+            background: $gray-bg;
+            border-radius: 4px;
+            color: $gray;
+					}
+					.articles__item-info-link {
+            @include gray-btn;
+					}
+				}
+			}
+		}
+	}
+}

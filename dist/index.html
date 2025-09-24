@@ -21,11 +21,11 @@
     <div class="header-wrapper">
       <a href="" class="header__logo">molokosite</a>
       <ul class="header__navList">
-        <li class="header__navItem"><a href="">Главная</a></li>
-        <li class="header__navItem"><a href="">Наши работы</a></li>
-        <li class="header__navItem"><a href="">Этапы</a></li>
-        <li class="header__navItem"><a href="">Тарифы</a></li>
-        <li class="header__navItem"><a href="">Отзывы</a></li>
+        <li class="header__navItem"><a href="#hero">Главная</a></li>
+        <li class="header__navItem"><a href="#works">Наши работы</a></li>
+        <li class="header__navItem"><a href="#steps">Этапы</a></li>
+        <li class="header__navItem"><a href="#rate">Тарифы</a></li>
+        <li class="header__navItem"><a href="#reviews">Отзывы</a></li>
       </ul>
       <ul class="header__contacts">
         <li class="header__contact"><a href="">+7 (000) 000-00-00</a></li>
@@ -34,7 +34,7 @@
       <button class="header__btn">Получить расчет</button>
     </div>
   </div>
-</header> <section class="hero">
+</header> <section class="hero" id="hero">
 	<div class="container">
 		<div class="hero__block">
 			<h1 class="hero__block-title">
@@ -118,7 +118,7 @@
 		</div>
 	</div>
 </section>
-<section class="works">
+<section class="works" id="works">
 	<div class="container">
 		<div class="works-block">
 			<h2 class="works__title">Наши работы</h2>
@@ -160,7 +160,7 @@
 		</div>
 	</div>
 </section>
-<section class="steps">
+<section class="steps" id="steps">
   <div class="container">
     <div class="steps-block">
       <h2 class="steps__title">Этапы работ</h2>
@@ -273,7 +273,7 @@
       </ul> -->
     </div>
   </div>`
-</section><section class="rate">
+</section><section class="rate" id="rate">
 	<div class="container">
 		<div class="rate-block">
 			<h2 class="rate__title">Тарифы/Продукты</h2>
@@ -294,9 +294,7 @@
 						<li class="rate__item-item">Наименование</li>
 						<li class="rate__item-item">Наименование</li>
 					</ul>
-					<p class="rate__item-description">
-						 Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание
-					</p>
+					<p class="rate__item-description">Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание</p>
 					<button class="rate__item-btn">Получить расчет</button>
 				</li>
 
@@ -310,9 +308,7 @@
 						<li class="rate__item-item">Наименование</li>
 						<li class="rate__item-item">Наименование</li>
 					</ul>
-					<p class="rate__item-description">
-						 Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание
-					</p>
+					<p class="rate__item-description">Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание</p>
 					<button class="rate__item-btn">Получить расчет</button>
 				</li>
 
@@ -326,9 +322,7 @@
 						<li class="rate__item-item">Наименование</li>
 						<li class="rate__item-item">Наименование</li>
 					</ul>
-					<p class="rate__item-description">
-						 Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание
-					</p>
+					<p class="rate__item-description">Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание</p>
 					<button class="rate__item-btn">Получить расчет</button>
 				</li>
 			</ul>
@@ -352,14 +346,14 @@
 		</div>
 	</div>
 </section>
-<section class="reviews">
+<section class="reviews" id="reviews">
 	<div class="container">
 		<h2 class="reviews__title">Отзывы</h2>
 		<div class="slider">
 			<ul class="slider-wrapper reviews__list">
 				<li class="reviews__item">
-					<img src="..assets/images/site.jpg" alt="" class="reviews__item-image" />
-					<div>
+					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
+					<div class="rewievs__item-wrapper">
             <div class="review__item-clientInfo">
               <p class="review__item-clientInfo-name">Наталья</p>
               <p class="review__item-clientInfo-type">ювелирный магазин</p>
@@ -368,27 +362,27 @@
             <div class="review__item-client-ratting">
               <ul class="review__item-client-ratting-stars">
                 <li class="review__item-client-ratting-star">
-                  <svg width="35" height="21">
+                  <svg width="17" height="18">
                     <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
                   </svg>
                 </li>
                 <li class="review__item-client-ratting-star">
-                  <svg width="35" height="21">
+                  <svg width="17" height="18">
                     <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
                   </svg>
                 </li>
                 <li class="review__item-client-ratting-star">
-                  <svg width="35" height="21">
+                  <svg width="17" height="18">
                     <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
                   </svg>
                 </li>
                 <li class="review__item-client-ratting-star">
-                  <svg width="35" height="21">
+                  <svg width="17" height="18">
                     <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
                   </svg>
                 </li>
                 <li class="review__item-client-ratting-star">
-                  <svg width="35" height="21">
+                  <svg width="17" height="18">
                     <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
                   </svg>
                 </li>
@@ -403,42 +397,44 @@
 					<button class="review__item-client-btn">Подробнее</button>
 				</li>
 				<li class="reviews__item">
-					<img src="..assets/images/site.jpg" alt="" class="reviews__item-image" />
-					<div class="review__item-clientInfo">
-						<p class="review__item-clientInfo-name">Наталья</p>
-						<p class="review__item-clientInfo-type">ювелирный магазин</p>
-						<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-					</div>
-					<div class="review__item-client-ratting">
-						<ul class="review__item-client-ratting-stars">
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-						</ul>
-						<p class="review__item-client-ratting-date">20 декабря 2024</p>
-					</div>
+					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
+					<div class="rewievs__item-wrapper">
+            <div class="review__item-clientInfo">
+              <p class="review__item-clientInfo-name">Наталья</p>
+              <p class="review__item-clientInfo-type">ювелирный магазин</p>
+              <p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+            </div>
+            <div class="review__item-client-ratting">
+              <ul class="review__item-client-ratting-stars">
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <p class="review__item-client-ratting-date">20 декабря 2024</p>
+            </div>
+          </div>
 					<p class="review__item-client-description">
 						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
 						или через форму, уточняем детали: макет, количество, размеры
@@ -446,171 +442,44 @@
 					<button class="review__item-client-btn">Подробнее</button>
 				</li>
 				<li class="reviews__item">
-					<img src="..assets/images/site.jpg" alt="" class="reviews__item-image" />
-					<div class="review__item-clientInfo">
-						<p class="review__item-clientInfo-name">Наталья</p>
-						<p class="review__item-clientInfo-type">ювелирный магазин</p>
-						<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-					</div>
-					<div class="review__item-client-ratting">
-						<ul class="review__item-client-ratting-stars">
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-						</ul>
-						<p class="review__item-client-ratting-date">20 декабря 2024</p>
-					</div>
-					<p class="review__item-client-description">
-						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
-						или через форму, уточняем детали: макет, количество, размеры
-					</p>
-					<button class="review__item-client-btn">Подробнее</button>
-				</li>
-				<li class="reviews__item">
-					<img src="..assets/images/site.jpg" alt="" class="reviews__item-image" />
-					<div class="review__item-clientInfo">
-						<p class="review__item-clientInfo-name">Наталья</p>
-						<p class="review__item-clientInfo-type">ювелирный магазин</p>
-						<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-					</div>
-					<div class="review__item-client-ratting">
-						<ul class="review__item-client-ratting-stars">
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-						</ul>
-						<p class="review__item-client-ratting-date">20 декабря 2024</p>
-					</div>
-					<p class="review__item-client-description">
-						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
-						или через форму, уточняем детали: макет, количество, размеры
-					</p>
-					<button class="review__item-client-btn">Подробнее</button>
-				</li>
-				<li class="reviews__item">
-					<img src="..assets/images/site.jpg" alt="" class="reviews__item-image" />
-					<div class="review__item-clientInfo">
-						<p class="review__item-clientInfo-name">Наталья</p>
-						<p class="review__item-clientInfo-type">ювелирный магазин</p>
-						<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-					</div>
-					<div class="review__item-client-ratting">
-						<ul class="review__item-client-ratting-stars">
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-						</ul>
-						<p class="review__item-client-ratting-date">20 декабря 2024</p>
-					</div>
-					<p class="review__item-client-description">
-						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
-						или через форму, уточняем детали: макет, количество, размеры
-					</p>
-					<button class="review__item-client-btn">Подробнее</button>
-				</li>
-				<li class="reviews__item">
-					<img src="..assets/images/site.jpg" alt="" class="reviews__item-image" />
-					<div class="review__item-clientInfo">
-						<p class="review__item-clientInfo-name">Наталья</p>
-						<p class="review__item-clientInfo-type">ювелирный магазин</p>
-						<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-					</div>
-					<div class="review__item-client-ratting">
-						<ul class="review__item-client-ratting-stars">
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-							<li class="review__item-client-ratting-star">
-								<svg width="35" height="21">
-									<use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-								</svg>
-							</li>
-						</ul>
-						<p class="review__item-client-ratting-date">20 декабря 2024</p>
-					</div>
+					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
+					<div class="rewievs__item-wrapper">
+            <div class="review__item-clientInfo">
+              <p class="review__item-clientInfo-name">Наталья</p>
+              <p class="review__item-clientInfo-type">ювелирный магазин</p>
+              <p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+            </div>
+            <div class="review__item-client-ratting">
+              <ul class="review__item-client-ratting-stars">
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="review__item-client-ratting-star">
+                  <svg width="17" height="18">
+                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <p class="review__item-client-ratting-date">20 декабря 2024</p>
+            </div>
+          </div>
 					<p class="review__item-client-description">
 						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
 						или через форму, уточняем детали: макет, количество, размеры
@@ -663,42 +532,6 @@
               <a href="" class="articles__item-info-link">Подробнее</a>
             </div>
           </li>
-          <li class="articles__item">
-            <img src="../assets/images/laptop.jpg" alt="" class="articles__item-image">
-            <p class="articles__item-title">Наименование</p>
-            <p class="articles__item-description">Краткое описание Краткое описаниеКраткое описаниеКраткое описаниеКраткое описание</p>
-            <div class="articles__item-info">
-              <p class="articles__item-info-date">01.22.2025</p>
-              <a href="" class="articles__item-info-link">Подробнее</a>
-            </div>
-          </li>
-          <li class="articles__item">
-            <img src="../assets/images/laptop.jpg" alt="" class="articles__item-image">
-            <p class="articles__item-title">Наименование</p>
-            <p class="articles__item-description">Краткое описание Краткое описаниеКраткое описаниеКраткое описаниеКраткое описание</p>
-            <div class="articles__item-info">
-              <p class="articles__item-info-date">01.22.2025</p>
-              <a href="" class="articles__item-info-link">Подробнее</a>
-            </div>
-          </li>
-          <li class="articles__item">
-            <img src="../assets/images/laptop.jpg" alt="" class="articles__item-image">
-            <p class="articles__item-title">Наименование</p>
-            <p class="articles__item-description">Краткое описание Краткое описаниеКраткое описаниеКраткое описаниеКраткое описание</p>
-            <div class="articles__item-info">
-              <p class="articles__item-info-date">01.22.2025</p>
-              <a href="" class="articles__item-info-link">Подробнее</a>
-            </div>
-          </li>
-          <li class="articles__item">
-            <img src="../assets/images/laptop.jpg" alt="" class="articles__item-image">
-            <p class="articles__item-title">Наименование</p>
-            <p class="articles__item-description">Краткое описание Краткое описаниеКраткое описаниеКраткое описаниеКраткое описание</p>
-            <div class="articles__item-info">
-              <p class="articles__item-info-date">01.22.2025</p>
-              <a href="" class="articles__item-info-link">Подробнее</a>
-            </div>
-          </li>
         </ul>
       </div>
     </div>
@@ -708,19 +541,49 @@
 		<div class="form__block">
 			<img src="../assets/images/site.jpg" alt="" class="form__block-image" />
 			<form action="" class="form__block-form">
-				<h2 class="form__block-form">Оставьте ваши контакты для получения бесплатного экспертного анализа по будущему сайту</h2>
-				<input type="text" class="form__block-form-input name" />
+				<h2 class="form__block-form-title">Оставьте ваши контакты для получения бесплатного экспертного анализа по будущему сайту</h2>
+				<input type="text" class="form__block-form-input name" placeholder="Фамилия Имя Отчество"/>
 				<div class="form__block-form-input contacts-block">
-					<input type="text" class="form__block-form-input contacts" />
-					<input type="text" class="form__block-form-input contacts" />
+					<input type="text" class="form__block-form-input contacts" placeholder="Номер телефона"/>
+					<input type="text" class="form__block-form-input contacts" placeholder="Электронный адрес"/>
 				</div>
-				<input type="text" class="form__block-form-input price" />
+				<input type="text" class="form__block-form-input price" placeholder="Ваш бюджет на разработку"/>
         <button class="form__block-form-btn">Получить расчет</button>
 			</form>
 		</div>
 	</div>
 </section>
-
+<dialog class="form__popUp popUp">
+  <div class="form__block">
+			<img src="../assets/images/site.jpg" alt="" class="form__block-image" />
+			<form action="" class="form__block-form">
+				<h2 class="form__block-form-title">Форма заявки:</h2>
+				<input type="text" class="form__block-form-input name" placeholder="Фамилия Имя Отчество">
+				<div class="form__block-form-input contacts-block">
+					<input type="text" class="form__block-form-input contacts" placeholder="Номер телефона"/>
+					<input type="text" class="form__block-form-input contacts" placeholder="Электронный адрес"/>
+				</div>
+				<input type="text" class="form__block-form-input price" placeholder="Ваш бюджет на разработку"/>
+        <div class="form__block-form-btnContaner">
+          <button class="form__block-form-btn">Получить расчет</button>
+          <div class="form__block-form-btnContaner-svg">
+            <a href="">
+              <img src="../assets/images/vk (1).png" alt="">
+            </a>
+            <a href="">
+              <img src="../assets/images/ws.png" alt="">
+            </a>
+            <a href="">
+              <img src="../assets/images/tg.png" alt="">
+            </a>
+            <a href="">
+              <img src="../assets/images/avito.png" alt="">
+            </a>
+          </div>
+        </div>
+			</form>
+		</div>
+</dialog>
  <footer class="footer">
   <div class="container">
     <div class="footer-wrapper">

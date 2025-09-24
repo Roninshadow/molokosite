@@ -1,2 +1,73 @@
-@charset "UTF-8";
-/* Стили для страницы reviews */
+.reviews {
+  padding: 40px 0;
+}
+.reviews .container .reviews__title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #111010;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.reviews .container .slider .slider-wrapper.reviews__list {
+  display: flex;
+  gap: 20px;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item {
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .rewievs__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111010;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-btn {
+  padding: 10px 0;
+  border-bottom: 1px dashed #b1abab;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #111010;
+  color: #b1abab;
+  transition: 0.2s;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-btn:hover {
+  color: #111010;
+  border-color: #111010;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-btn {
+  margin-top: 20px;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-clientInfo-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111010;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-clientInfo-type {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111010;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-clientInfo-company {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111010;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-ratting-stars {
+  display: flex;
+  gap: 4px;
+  height: 18px;
+}
+.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-ratting-stars .review__item-client-ratting-date {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111010;
+  margin-top: 10px;
+}

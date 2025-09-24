@@ -1,2 +1,67 @@
 @charset "UTF-8";
 /* Стили для страницы works */
+.works {
+    padding: 40px 0;
+}
+
+.works .container .works-block {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.works .container .works-block .works__title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #111010;
+}
+
+.works .container .works-block .works__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.works .container .works-block .works__list .works__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 14px;
+    -ms-flex-align: start;
+    align-items: start;
+}
+
+.works .container .works-block .works__list .works__item .works__item-image {
+    border-radius: 8px;
+}
+
+.works .container .works-block .works__list .works__item .works__item-name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #111010;
+}
+
+.works .container .works-block .works__btn {
+    padding: 10px 0;
+    border-bottom: 1px dashed #b1abab;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #111010;
+    color: #b1abab;
+    transition: 0.2s;
+}
+
+.works .container .works-block .works__btn:hover {
+    color: #111010;
+    border-color: #111010;
+}

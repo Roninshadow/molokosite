@@ -1,2 +1,80 @@
-/* Стили для страницы reviews */
+@use 'variables' as *;
 
+.reviews {
+	padding: 40px 0;
+	.container {
+		.reviews__title {
+			@include h2-22;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		.slider {
+			.slider-wrapper.reviews__list {
+				display: flex;
+				gap: 20px;
+				.reviews__item {
+					padding: 18px;
+					background: $white;
+					border-radius: 10px;
+					.rewievs__item-wrapper {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-bottom: 20px;
+					}
+					.review__item-clientInfo {
+					}
+					.review__item-client-ratting {
+					}
+					.reviews__item-image {
+					}
+					.review__item-client-description {
+						@include reg-14;
+					}
+					.review__item-client-btn {
+						@include gray-btn;
+						margin-top: 20px;
+					}
+					.review__item-clientInfo-name {
+						@include sem-14;
+					}
+					.review__item-clientInfo-type {
+						@include reg-14;
+					}
+					.review__item-clientInfo-company {
+						@include reg-14;
+					}
+					.review__item-client-ratting-stars {
+						display: flex;
+						gap: 4px;
+						height: 18px;
+						.review__item-client-ratting-star {
+						}
+						.review__item-client-ratting-date {
+							@include reg-14;
+							margin-top: 10px;
+						}
+						.review__item-clientInfo {
+							.review__item-clientInfo-name {
+							}
+							.review__item-clientInfo-type {
+							}
+							.review__item-clientInfo-company {
+							}
+						}
+						.review__item-client-ratting {
+							.review__item-client-ratting-stars {
+							}
+							.review__item-client-ratting-date {
+							}
+							.review__item-client-ratting-star {
+								svg {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
