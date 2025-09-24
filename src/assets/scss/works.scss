@@ -1,0 +1,40 @@
+/* Стили для страницы works */
+@use 'variables' as *;
+
+.works {
+	padding: 40px 0;
+	.container {
+		.works-block {
+			background: $white;
+			border-radius: 20px;
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 40px;
+			.works__title {
+				@include h2-22;
+			}
+			.works__list {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+				.works__item {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          align-items: start;
+					.works__item-image {
+            border-radius: 8px;
+					}
+					.works__item-name {
+            @include med-16;
+					}
+				}
+			}
+			.works__btn {
+        @include gray-btn;
+			}
+		}
+	}
+}

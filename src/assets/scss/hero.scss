@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+.hero {
+	padding: 40px 0;
+	.container {
+		.hero__block {
+			background-image: url(../images/hero.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+      padding: 40px 30px;
+      border-radius: 20px;
+			.hero__block-title {
+        @include h1;
+        max-width: 620px;
+			}
+			.hero__block-subtitle {
+        @include med-16;
+        margin-top: 25px;
+        max-width: 620px;
+			}
+			.hero__block-btn {
+        @include main-btn;
+        margin-top: 25px;
+			}
+		}
+		.hero__history-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+			img {
+        border-radius: 8px;
+			}
+		}
+	}
+}

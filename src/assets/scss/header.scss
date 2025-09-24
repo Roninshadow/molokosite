@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.header {
+	padding: 20px 0;
+  background: $white;
+	.container {
+		.header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+			.header__logo {
+				@include logo;
+			}
+			.header__navList {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+				.header__navItem {
+          @include reg-16;
+          color: $gray;
+          transition: .2s;
+          padding: 6px 10px;
+          &:hover {
+            color: $black;
+          }
+				}
+			}
+			.header__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: start;
+				.header__contact {
+          @include reg-14;
+				}
+			}
+			.header__btn {
+        @include main-btn;
+			}
+		}
+	}
+}

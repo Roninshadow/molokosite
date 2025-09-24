@@ -1,0 +1,67 @@
+@use 'variables' as *;
+
+.steps {
+	padding: 40px 0;
+	.container {
+		.steps-block {
+			padding: 30px;
+			background: $white;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			align-items: center;
+			.steps__title {
+				@include h2-22;
+			}
+			.steps__tabs {
+				display: flex;
+				gap: 14px;
+				align-items: center;
+				.steps__tab {
+					@include reg-16;
+				}
+			}
+			.steps__list {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 20px;
+				counter-reset: my-counter;
+				.steps__item {
+					padding: 30px 15px;
+					padding-left: 65px;
+					position: relative;
+					border: 2px solid $gray-bg;
+					border-radius: 20px;
+					counter-increment: my-counter;
+          transition: .2s;
+					&::before {
+						content: counter(my-counter); /* выводим номер */
+						position: absolute;
+						padding: 10px;
+						background: $gray-bg;
+						top: 30px;
+						left: 15px;
+						@include h2;
+						border-radius: 5px;
+            transition: .2s;
+					}
+					&:hover {
+						@include bs2;
+						border-color: $main;
+						&::before {
+							background: $main;
+						}
+					}
+					.steps__item-title {
+						@include sem-14;
+						margin-bottom: 10px;
+					}
+					.steps__item-text {
+						@include reg-14;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,87 @@
+@use 'variables' as *;
+
+.rate {
+	padding: 40px 0;
+	.container {
+		.rate-block {
+			background: $white;
+			border-radius: 20px;
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			align-items: center;
+			.rate__title {
+				@include h2-22;
+			}
+			.rate__tabs {
+				display: flex;
+				gap: 14px;
+				.rate__tab {
+					padding: 8px 20px;
+					@include reg-16;
+				}
+			}
+
+			.rate__list {
+				display: flex;
+				gap: 20px;
+				.rate__item {
+					&:not(:first-child) {
+						padding-left: 20px;
+						border-left: 1px solid $gray;
+					}
+
+					.rate__item-image {
+						border-radius: 8px;
+					}
+					.rate__item-title {
+						@include h2-22;
+						margin-top: 20px;
+					}
+					.rate__item-price {
+						@include reg-16;
+						margin-top: 10px;
+					}
+					.rate__item-ListTitle {
+						@include reg-14;
+						color: $gray;
+					}
+					.rate__item-List {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+						.rate__item-item {
+              @include reg-14;
+              padding-left: 30px;
+              position: relative;
+              &::before {
+                position: absolute;
+                content: "";
+                background-image: url(../images/checkMark.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+              }
+						}
+					}
+					.rate__item-description {
+            @include reg-16;
+            margin-top: 10px;
+					}
+					.rate__item-btn {
+            @include main-btn;
+            margin-top: 30px;
+            width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

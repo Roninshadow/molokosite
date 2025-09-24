@@ -1,0 +1,50 @@
+.whom {
+  padding: 40px 0;
+}
+.whom .container .whom__block {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+}
+.whom .container .whom__block .whom__title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #111010;
+  margin-bottom: 20px;
+}
+.whom .container .whom__block .whom__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #111010;
+  max-width: 575px;
+  margin-bottom: 40px;
+}
+.whom .container .whom__block .whom__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.whom .container .whom__block .whom__cards .whom__card {
+  padding: 14px;
+  border: 1px solid #b1abab;
+  border-radius: 20px;
+  max-width: 230px;
+  text-align: center;
+  transition: 0.2s;
+}
+.whom .container .whom__block .whom__cards .whom__card:hover {
+  border-color: #ffff18;
+  -webkit-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.whom .container .whom__block .whom__cards .whom__card .whom__card-image {
+  width: 43px;
+  height: 43px;
+}
+.whom .container .whom__block .whom__cards .whom__card .whom__card-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111010;
+  text-align: left;
+}

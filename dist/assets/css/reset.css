@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.5;
+    color: inherit;
+    background: transparent;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+*:focus {
+    outline: none;
+}

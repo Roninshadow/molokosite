@@ -1,0 +1,55 @@
+/* Стили для страницы form */
+@use 'variables' as *;
+
+.form {
+	padding: 40px 0;
+	.container {
+		.form__block {
+			background: $gray2;
+			display: flex;
+			justify-content: space-between;
+			@include bs2;
+			border-radius: 20px;
+			.form__block-image {
+				padding: 70px 42px;
+			}
+			.form__block-form {
+				background: $white;
+				border-radius: 20px;
+				padding: 60px 30px;
+				display: flex;
+				flex-direction: column;
+				gap: 14px;
+				align-items: start;
+				width: 100%;
+				.form__block-form-title {
+					@include h2-22;
+					margin-bottom: 16px;
+				}
+				.form__block-form-input.name {
+					@include input;
+					width: 100%;
+				}
+				.form__block-form-input.contacts-block {
+					display: flex;
+					gap: 14px;
+					width: 100%;
+
+					.form__block-form-input.contacts {
+						@include input;
+						width: 100%;
+					}
+				}
+				.form__block-form-input.price {
+					@include input;
+					width: 100%;
+				}
+				.form__block-form-btn {
+					@include main-btn;
+					min-width: 270px;
+					margin-top: 16px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+/* Стили для страницы WhyAreWe */
+@use 'variables' as *;
+
+.WhyAreWe {
+	padding: 40px 0;
+
+	.container {
+		.WhyAreWe-block {
+			background: $white;
+			padding: 30px;
+			border-radius: 20px;
+
+			.WhyAreWe__title {
+				@include h2-22;
+			}
+
+			.WhyAreWe__list {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 14px;
+				margin-top: 40px;
+				align-items: stretch;
+
+				.WhyAreWe__item {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					padding: 20px;
+					border-radius: 20px;
+					border: 1px solid $gray2;
+					@include med-16;
+				}
+			}
+		}
+	}
+}

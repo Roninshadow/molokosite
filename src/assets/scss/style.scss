@@ -1,0 +1,33 @@
+@use 'variables' as *;
+@use 'sass:meta';
+@use 'reset';
+body {
+	line-height: 1.4;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	background: $gray-bg;
+}
+.scroll-block {
+	overflow: hidden;
+}
+.container {
+	max-width: calc(1264px + 20px * 2);
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+
+@include meta.load-css('footer');
+@include meta.load-css('header');
+@include meta.load-css('hero');
+@include meta.load-css('form');
+@include meta.load-css('ForWhom');
+@include meta.load-css('WhyAreWe');
+@include meta.load-css('WhyAreWe');
+@include meta.load-css('works');
+@include meta.load-css('steps');
+@include meta.load-css('rate');
+@include meta.load-css('reviews');
+@include meta.load-css('Articles');
+@include meta.load-css('form2');
