@@ -6,38 +6,70 @@
 		.rate-block {
 			background: $white;
 			border-radius: 20px;
-			padding: 30px;
+			padding: 25px 30px;
 			display: flex;
 			flex-direction: column;
 			gap: 40px;
 			align-items: center;
+			@media (max-width: 415px) {
+				padding: 30px 14px;
+			}
 			.rate__title {
 				@include h2-22;
+				@media (max-width: 768px) {
+					@include h3-sem;
+				}
 			}
 			.rate__tabs {
 				display: flex;
 				gap: 14px;
+				@media (max-width: 375px) {
+					gap: 0;
+				}
 				.rate__tab {
 					padding: 8px 20px;
 					@include reg-16;
+					@media (max-width: 375px) {
+						padding: 8px 14px;
+					}
 				}
-			}
+				.rate__tab.active {
+					@include reg-16;
+					background: $main;
+					border-radius: 100px;
+				}
 
-			.rate__list {
+			}
+			.rate__list.active {
 				display: flex;
+			}
+			.rate__list {
+				display: none;
 				gap: 20px;
+				@media (max-width: 768px) {
+					flex-direction: column;
+				}
 				.rate__item {
 					&:not(:first-child) {
 						padding-left: 20px;
 						border-left: 1px solid $gray;
+						@media (max-width: 768px) {
+							border: none;
+							padding: 0;
+						}
 					}
 
 					.rate__item-image {
 						border-radius: 8px;
+						height: 300px;
+						@media (max-width: 768px) {
+							width: 100%;
+							max-height: 200px;
+						}
 					}
 					.rate__item-title {
 						@include h2-22;
-						margin-top: 20px;
+						margin-top: 15px;
 					}
 					.rate__item-price {
 						@include reg-16;
@@ -46,6 +78,7 @@
 					.rate__item-ListTitle {
 						@include reg-14;
 						color: $gray;
+						margin-top: 10px;
 					}
 					.rate__item-List {
             display: flex;
@@ -77,7 +110,7 @@
 					}
 					.rate__item-btn {
             @include main-btn;
-            margin-top: 30px;
+            margin-top: 28px;
             width: 100%;
 					}
 				}

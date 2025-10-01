@@ -1,144 +1,481 @@
 <section class="reviews" id="reviews">
 	<div class="container">
 		<h2 class="reviews__title">Отзывы</h2>
-		<div class="slider">
-			<ul class="slider-wrapper reviews__list">
-				<li class="reviews__item">
+		<div class="swiper review-swiper">
+			<ul class="swiper-wrapper reviews__list">
+				<li class="reviews__item swiper-slide">
 					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
 					<div class="rewievs__item-wrapper">
-            <div class="review__item-clientInfo">
-              <p class="review__item-clientInfo-name">Наталья</p>
-              <p class="review__item-clientInfo-type">ювелирный магазин</p>
-              <p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-            </div>
-            <div class="review__item-client-ratting">
-              <ul class="review__item-client-ratting-stars">
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-              </ul>
-              <p class="review__item-client-ratting-date">20 декабря 2024</p>
-            </div>
-          </div>
+						<div class="review__item-clientInfo">
+							<p class="review__item-clientInfo-name">Наталья</p>
+							<p class="review__item-clientInfo-type">ювелирный магазин</p>
+							<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+						</div>
+						<div class="review__item-client-ratting">
+							<ul class="review__item-client-ratting-stars">
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+							</ul>
+							<p class="review__item-client-ratting-date">20 декабря 2024</p>
+						</div>
+					</div>
 					<p class="review__item-client-description">
-						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
-						или через форму, уточняем детали: макет, количество, размеры
+						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер или через форму, уточняем детали: макет, количество, размеры
 					</p>
-					<button class="review__item-client-btn">Подробнее</button>
+					<div class="review-btn-contaner">
+						<button class="review__item-client-btn review-btn">Подробнее</button>
+					</div>
 				</li>
-				<li class="reviews__item">
+				<li class="reviews__item swiper-slide">
 					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
 					<div class="rewievs__item-wrapper">
-            <div class="review__item-clientInfo">
-              <p class="review__item-clientInfo-name">Наталья</p>
-              <p class="review__item-clientInfo-type">ювелирный магазин</p>
-              <p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-            </div>
-            <div class="review__item-client-ratting">
-              <ul class="review__item-client-ratting-stars">
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-              </ul>
-              <p class="review__item-client-ratting-date">20 декабря 2024</p>
-            </div>
-          </div>
+						<div class="review__item-clientInfo">
+							<p class="review__item-clientInfo-name">Наталья</p>
+							<p class="review__item-clientInfo-type">ювелирный магазин</p>
+							<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+						</div>
+						<div class="review__item-client-ratting">
+							<ul class="review__item-client-ratting-stars">
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+							</ul>
+							<p class="review__item-client-ratting-date">20 декабря 2024</p>
+						</div>
+					</div>
 					<p class="review__item-client-description">
-						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
-						или через форму, уточняем детали: макет, количество, размеры
+						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер или через форму, уточняем детали: макет, количество, размеры
 					</p>
-					<button class="review__item-client-btn">Подробнее</button>
+					<div class="review-btn-contaner">
+						<button class="review__item-client-btn review-btn">Подробнее</button>
+					</div>
 				</li>
-				<li class="reviews__item">
+				<li class="reviews__item swiper-slide">
 					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
 					<div class="rewievs__item-wrapper">
-            <div class="review__item-clientInfo">
-              <p class="review__item-clientInfo-name">Наталья</p>
-              <p class="review__item-clientInfo-type">ювелирный магазин</p>
-              <p class="review__item-clientInfo-company">ООО “Сатурн”</p>
-            </div>
-            <div class="review__item-client-ratting">
-              <ul class="review__item-client-ratting-stars">
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="review__item-client-ratting-star">
-                  <svg width="17" height="18">
-                    <use xlink:href="assets/svg/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-              </ul>
-              <p class="review__item-client-ratting-date">20 декабря 2024</p>
-            </div>
-          </div>
+						<div class="review__item-clientInfo">
+							<p class="review__item-clientInfo-name">Наталья</p>
+							<p class="review__item-clientInfo-type">ювелирный магазин</p>
+							<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+						</div>
+						<div class="review__item-client-ratting">
+							<ul class="review__item-client-ratting-stars">
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+							</ul>
+							<p class="review__item-client-ratting-date">20 декабря 2024</p>
+						</div>
+					</div>
 					<p class="review__item-client-description">
-						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер
-						или через форму, уточняем детали: макет, количество, размеры
+						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер или через форму, уточняем детали: макет, количество, размеры
 					</p>
-					<button class="review__item-client-btn">Подробнее</button>
+					<div class="review-btn-contaner">
+						<button class="review__item-client-btn review-btn">Подробнее</button>
+					</div>
+				</li>
+				<li class="reviews__item swiper-slide">
+					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
+					<div class="rewievs__item-wrapper">
+						<div class="review__item-clientInfo">
+							<p class="review__item-clientInfo-name">Наталья</p>
+							<p class="review__item-clientInfo-type">ювелирный магазин</p>
+							<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+						</div>
+						<div class="review__item-client-ratting">
+							<ul class="review__item-client-ratting-stars">
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+							</ul>
+							<p class="review__item-client-ratting-date">20 декабря 2024</p>
+						</div>
+					</div>
+					<p class="review__item-client-description">
+						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер или через форму, уточняем детали: макет, количество, размеры
+					</p>
+					<div class="review-btn-contaner">
+						<button class="review__item-client-btn review-btn">Подробнее</button>
+					</div>
+				</li>
+				<li class="reviews__item swiper-slide">
+					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
+					<div class="rewievs__item-wrapper">
+						<div class="review__item-clientInfo">
+							<p class="review__item-clientInfo-name">Наталья</p>
+							<p class="review__item-clientInfo-type">ювелирный магазин</p>
+							<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+						</div>
+						<div class="review__item-client-ratting">
+							<ul class="review__item-client-ratting-stars">
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+							</ul>
+							<p class="review__item-client-ratting-date">20 декабря 2024</p>
+						</div>
+					</div>
+					<p class="review__item-client-description">
+						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер или через форму, уточняем детали: макет, количество, размеры
+					</p>
+					<div class="review-btn-contaner">
+						<button class="review__item-client-btn review-btn">Подробнее</button>
+					</div>
+				</li>
+				<li class="reviews__item swiper-slide">
+					<img src="../assets/images/site.jpg" alt="" class="reviews__item-image" />
+					<div class="rewievs__item-wrapper">
+						<div class="review__item-clientInfo">
+							<p class="review__item-clientInfo-name">Наталья</p>
+							<p class="review__item-clientInfo-type">ювелирный магазин</p>
+							<p class="review__item-clientInfo-company">ООО “Сатурн”</p>
+						</div>
+						<div class="review__item-client-ratting">
+							<ul class="review__item-client-ratting-stars">
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+								<li class="review__item-client-ratting-star">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.82819 1.63275L10.1988 4.37082C10.3331 4.63962 10.5923 4.82601 10.893 4.86914L13.959 5.31046C14.7165 5.41983 15.018 6.33791 14.4697 6.86396L12.2526 8.99433C12.0348 9.20382 11.9356 9.50497 11.9871 9.80073L12.5103 12.8084C12.6392 13.5524 11.8473 14.12 11.1702 13.768L8.42991 12.347C8.16126 12.2076 7.83952 12.2076 7.57009 12.347L4.82975 13.768C4.15267 14.12 3.3608 13.5524 3.49043 12.8084L4.01288 9.80073C4.06443 9.50497 3.96525 9.20382 3.74736 8.99433L1.53026 6.86396C0.982036 6.33791 1.28348 5.41983 2.041 5.31046L5.10699 4.86914C5.40765 4.82601 5.66771 4.63962 5.80203 4.37082L7.17181 1.63275C7.51074 0.955748 8.48926 0.955748 8.82819 1.63275Z"
+											fill="#FFF151"
+											stroke="#FFF151"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</li>
+							</ul>
+							<p class="review__item-client-ratting-date">20 декабря 2024</p>
+						</div>
+					</div>
+					<p class="review__item-client-description">
+						пишите нам в мессенджер или через форму, уточняем детали: макет, количество, размерыпишите нам в мессенджер или через форму, уточняем детали: макет, количество, размеры
+					</p>
+					<div class="review-btn-contaner">
+						<button class="review__item-client-btn review-btn">Подробнее</button>
+					</div>
 				</li>
 			</ul>
+			<div class="swiper-button-next">
+				<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.8">
+						<rect width="44" height="44" rx="22" transform="matrix(-1 0 0 1 44 0)" fill="#EFEBD8" fill-opacity="0.7" />
+						<path d="M18.5 15L25.5 22L18.5 29" stroke="#111010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</g>
+				</svg>
+			</div>
+			<div class="swiper-button-prev">
+				<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.8">
+						<rect width="44" height="44" rx="22" fill="#EFEBD8" fill-opacity="0.7" />
+						<path d="M25.5 15L18.5 22L25.5 29" stroke="#111010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</g>
+				</svg>
+			</div>
 		</div>
 	</div>
 </section>

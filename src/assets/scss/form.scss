@@ -10,21 +10,36 @@
 			justify-content: space-between;
 			@include bs2;
 			border-radius: 20px;
+			@media (max-width: 768px) {
+				flex-direction: column;
+			}
 			.form__block-image {
-				padding: 70px 42px;
+				margin: 70px 42px;
+				min-height: 240px;
+				object-fit: contain;
+				@media (max-width: 480px) {
+					margin: 20px 14px;
+					margin-bottom: 40px;
+				}
 			}
 			.form__block-form {
 				background: $white;
 				border-radius: 20px;
-				padding: 60px 30px;
+				padding: 62px 30px;
 				display: flex;
 				flex-direction: column;
 				gap: 14px;
 				align-items: start;
 				width: 100%;
+				@media (max-width: 415px) {
+				padding: 30px 14px;
+			}
 				.form__block-form-title {
 					@include h2-22;
 					margin-bottom: 16px;
+					@media (max-width: 768px) {
+						@include h3-sem;
+					}
 				}
 				.form__block-form-input.name {
 					@include input;
@@ -34,6 +49,9 @@
 					display: flex;
 					gap: 14px;
 					width: 100%;
+					@media (max-width: 480px) {
+						flex-direction: column;
+					}
 
 					.form__block-form-input.contacts {
 						@include input;
@@ -48,8 +66,23 @@
 					@include main-btn;
 					min-width: 270px;
 					margin-top: 16px;
+					@media (max-width: 480px) {
+						width: 100%;
+					}
 				}
 			}
 		}
 	}
+}
+.mobile-text {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .desktop-text {
+    display: none;
+  }
+  .mobile-text {
+    display: inline;
+  }
 }

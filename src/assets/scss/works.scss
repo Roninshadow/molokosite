@@ -11,29 +11,50 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			gap: 40px;
+			gap: 35px;
+			@media (max-width: 415px) {
+				padding: 30px 14px;
+			}
 			.works__title {
 				@include h2-22;
+				@media (max-width: 768px) {
+					@include h3-sem;
+				}
 			}
 			.works__list {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 20px;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 20px;
+				max-height: 565px;
+				overflow: hidden;
+				@media (max-width: 768px) {
+					grid-template-columns: repeat(2, 1fr);
+					max-height: 570px;
+				}
+				@media (max-width: 480px) {
+					grid-template-columns: 1fr;
+					max-height: 570px;
+				}
 				.works__item {
-          display: flex;
-          flex-direction: column;
-          gap: 14px;
-          align-items: start;
+					display: flex;
+					flex-direction: column;
+					gap: 14px;
+					align-items: start;
+					cursor: pointer;
 					.works__item-image {
-            border-radius: 8px;
+						border-radius: 8px;
+						height: 240px;
 					}
 					.works__item-name {
-            @include med-16;
+						@include med-16;
 					}
 				}
 			}
+			.works__list.active {
+				max-height: none;
+			}
 			.works__btn {
-        @include gray-btn;
+				@include gray-btn;
 			}
 		}
 	}

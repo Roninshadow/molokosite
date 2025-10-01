@@ -3,25 +3,45 @@
 .footer {
 	padding: 50px 0;
 	background: $black;
+	margin-top: 70px;
+	@media (max-width: 480px) {
+		margin-top: 60px;
+		padding-bottom: 100px;
+	}
 	.container {
 		.footer-wrapper {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-      padding-bottom: 30px;
-      border-bottom: 1px solid $gray;
+			padding-bottom: 30px;
+			border-bottom: 1px solid $gray;
+			@media (max-width: 768px) {
+				flex-direction: column;
+				align-items: start;
+				gap: 35px;
+			}
 			.footer__logo {
 				@include logo;
 				color: $white;
+				padding: 6px 10px;
 			}
 			.footer__navList {
 				display: flex;
 				gap: 14px;
+				@media (max-width: 768px) {
+					flex-direction: column;
+					align-items: start;
+					gap: 26px;
+					padding-left: 10px;
+				}
 				.footer__navItem {
 					@include reg-16;
 					color: $gray;
 					transition: 0.2s;
 					padding: 6px 10px;
+					@media (max-width: 768px) {
+						padding: 0;
+					}
 					&:hover {
 						color: $white;
 					}
@@ -31,22 +51,50 @@
 				display: flex;
 				flex-direction: column;
 				gap: 6px;
+				@media (max-width: 768px) {
+					align-items: start;
+				}
 				.footer__contact {
-          @include reg-16;
-          color: $white;
+					@include reg-16;
+					@media (max-width: 480px) {
+						@include reg-14;
+					}
+					color: $white;
+
 				}
 			}
 			.footer__btn {
-        @include main-btn;
+				@include main-btn;
 			}
 		}
 		.footer__info {
-      display: flex;
-      margin-top: 30px;
-      align-items: center;
-      gap: 14px;
-      @include reg-16;
-      color: $gray;
+			display: flex;
+			margin-top: 30px;
+			align-items: center;
+			gap: 14px;
+			@include reg-16;
+			color: $gray;
+			@media (max-width: 480px) {
+				flex-direction: column;
+				align-items: start;
+			}
 		}
 	}
+	
+  .mobile-pannel {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 12px 20px;
+		background: $white;
+		display: none;
+		@media (max-width: 480px) {
+			display: block;
+		}
+    .mobile-btn.form {
+			@include main-btn;
+			width: 100%;
+    }
+  }
 }

@@ -5,7 +5,7 @@
 .rate .container .rate-block {
     background: #ffffff;
     border-radius: 20px;
-    padding: 30px;
+    padding: 25px 30px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -15,16 +15,36 @@
     align-items: center;
 }
 
+@media (max-width: 415px) {
+    .rate .container .rate-block {
+        padding: 30px 14px;
+    }
+}
+
 .rate .container .rate-block .rate__title {
     font-size: 22px;
     font-weight: 500;
     color: #111010;
 }
 
+@media (max-width: 768px) {
+    .rate .container .rate-block .rate__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111010;
+    }
+}
+
 .rate .container .rate-block .rate__tabs {
     display: -ms-flexbox;
     display: flex;
     gap: 14px;
+}
+
+@media (max-width: 375px) {
+    .rate .container .rate-block .rate__tabs {
+        gap: 0;
+    }
 }
 
 .rate .container .rate-block .rate__tabs .rate__tab {
@@ -34,10 +54,35 @@
     color: #111010;
 }
 
-.rate .container .rate-block .rate__list {
+@media (max-width: 375px) {
+    .rate .container .rate-block .rate__tabs .rate__tab {
+        padding: 8px 14px;
+    }
+}
+
+.rate .container .rate-block .rate__tabs .rate__tab.active {
+    font-size: 16px;
+    font-weight: 400;
+    color: #111010;
+    background: #ffff18;
+    border-radius: 100px;
+}
+
+.rate .container .rate-block .rate__list.active {
     display: -ms-flexbox;
     display: flex;
+}
+
+.rate .container .rate-block .rate__list {
+    display: none;
     gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .rate .container .rate-block .rate__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .rate .container .rate-block .rate__list .rate__item:not(:first-child) {
@@ -45,8 +90,22 @@
     border-left: 1px solid #b1abab;
 }
 
+@media (max-width: 768px) {
+    .rate .container .rate-block .rate__list .rate__item:not(:first-child) {
+        border: none;
+        padding: 0;
+    }
+}
+
 .rate .container .rate-block .rate__list .rate__item .rate__item-image {
     border-radius: 8px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .rate .container .rate-block .rate__list .rate__item .rate__item-image {
+        width: 100%;
+    }
 }
 
 .rate .container .rate-block .rate__list .rate__item .rate__item-title {

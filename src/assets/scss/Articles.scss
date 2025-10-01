@@ -1,49 +1,73 @@
 @use 'variables' as *;
 
 .articles {
-  padding: 40px 0;
+	padding: 40px 0;
+	@media (max-width: 480px) {
+		padding-top: 60px;
+	}
 	.container {
 		.articles-block {
-      padding: 30px;
-      background: $white;
-      border-radius: 20px;
+			padding: 30px;
+			background: $white;
+			border-radius: 20px;
+      @media (max-width: 415px) {
+				padding: 30px 14px;
+			}
 			.articles__title {
-        text-align: center;
-        @include h2-22;
-        margin-bottom: 40px;
+				text-align: center;
+				@include h2-22;
+				margin-bottom: 40px;
 			}
-			.slider {
+			.swiper {
+				position: relative;
+				overflow: hidden;
 			}
-			.slider-wrapper.articles__list {
-        display: flex;
-        gap: 20px;
+			.articles__list {
+				display: flex;
+				overflow-y: scroll;
+				gap: 20px;
+				&::-webkit-scrollbar {
+					display: none;
+				}
+				overflow-x: scroll;
+				scrollbar-width: none;
+				-ms-overflow-style: none;
 				.articles__item {
+					min-width: 286px;
+					@media (max-width: 415px) {
+						min-width: 250px;
+					}
 				}
 				.articles__item-image {
-          border-radius: 8px;
-          margin-bottom: 20px;
+					border-radius: 8px;
+					margin-bottom: 15px;
+					@media (max-width: 480px) {
+						height: 235px;
+					}
 				}
 				.articles__item-title {
-          @include med-16;
+					@include med-16;
 				}
 				.articles__item-description {
-          margin-top: 20px;
-          @include reg-14;
-          margin-bottom: 20px;
+					margin-top: 20px;
+					@include reg-14;
+					margin-bottom: 20px;
 				}
 				.articles__item-info {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
 					.articles__item-info-date {
-            @include reg-12;
-            padding: 5px 11px;
-            background: $gray-bg;
-            border-radius: 4px;
-            color: $gray;
+						@include reg-12;
+						padding: 5px 11px;
+						background: $gray-bg;
+						border-radius: 4px;
+						color: $gray;
 					}
 					.articles__item-info-link {
-            @include gray-btn;
+						@include gray-btn;
+						padding: 6px 0;
+						@include reg-14;
 					}
 				}
 			}

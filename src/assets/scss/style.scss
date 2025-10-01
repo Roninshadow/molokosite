@@ -16,8 +16,28 @@ body {
 	box-sizing: border-box;
 	padding: 0 20px;
 }
-
-
+.cross {
+	position: absolute;
+	top: 23px;
+	right: 23px;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+.swiper-button-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	cursor: pointer;
+}
+.swiper-button-prev {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	cursor: pointer;
+}
 @include meta.load-css('footer');
 @include meta.load-css('header');
 @include meta.load-css('hero');

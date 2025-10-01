@@ -2,40 +2,68 @@
 
 .header {
 	padding: 20px 0;
-  background: $white;
+	background: $white;
+	@media (max-width: 480px) {
+		padding: 15px 0;
+	}
 	.container {
 		.header-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 			.header__logo {
 				@include logo;
+				padding: 6px 10px;
 			}
 			.header__navList {
-        display: flex;
-        gap: 14px;
-        align-items: center;
+				display: flex;
+				gap: 14px;
+				align-items: center;
+				@media (max-width: 1024px) {
+					display: none;
+				}
 				.header__navItem {
-          @include reg-16;
-          color: $gray;
-          transition: .2s;
-          padding: 6px 10px;
-          &:hover {
-            color: $black;
-          }
+					@include reg-16;
+					color: $gray;
+					transition: 0.2s;
+					padding: 6px 10px;
+					&:hover {
+						color: $black;
+					}
 				}
 			}
 			.header__contacts {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        align-items: start;
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+				align-items: start;
+				@media (max-width: 1024px) {
+					display: none;
+				}
 				.header__contact {
-          @include reg-14;
+					@include reg-14;
 				}
 			}
 			.header__btn {
-        @include main-btn;
+				@include main-btn;
+				@media (max-width: 1024px) {
+					display: none;
+				}
+			}
+			.mob-pannel {
+        display: none;
+        @media (max-width: 1024px) {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+        }
+				.header__btn-mob {
+					@include main-btn;
+          padding: 6px 15px;
+				}
+				.header-burger-btn {
+          cursor: pointer;
+				}
 			}
 		}
 	}

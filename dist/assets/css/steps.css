@@ -4,8 +4,12 @@
     padding: 40px 0;
 }
 
+.steps .container {
+    overflow: hidden;
+}
+
 .steps .container .steps-block {
-    padding: 30px;
+    padding: 30px 0;
     background: #ffffff;
     border-radius: 20px;
     display: -ms-flexbox;
@@ -23,6 +27,14 @@
     color: #111010;
 }
 
+@media (max-width: 768px) {
+    .steps .container .steps-block .steps__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111010;
+    }
+}
+
 .steps .container .steps-block .steps__tabs {
     display: -ms-flexbox;
     display: flex;
@@ -31,17 +43,42 @@
     align-items: center;
 }
 
+@media (max-width: 375px) {
+    .steps .container .steps-block .steps__tabs {
+        gap: 0;
+    }
+}
+
 .steps .container .steps-block .steps__tabs .steps__tab {
     font-size: 16px;
     font-weight: 400;
     color: #111010;
+    padding: 8px 25px;
+}
+
+@media (max-width: 375px) {
+    .steps .container .steps-block .steps__tabs .steps__tab {
+        padding: 8px 14px;
+    }
+}
+
+.steps .container .steps-block .steps__tabs .steps__tab.active {
+    background: #ffff18;
+    border-radius: 100px;
 }
 
 .steps .container .steps-block .steps__list {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     counter-reset: my-counter;
+    padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+    .steps .container .steps-block .steps__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .steps .container .steps-block .steps__list .steps__item {
@@ -52,13 +89,14 @@
     border-radius: 20px;
     counter-increment: my-counter;
     transition: 0.2s;
+    min-width: 250px;
 }
 
 .steps .container .steps-block .steps__list .steps__item::before {
     content: counter(my-counter);
  /* выводим номер */
     position: absolute;
-    padding: 10px;
+    padding: 10px 12px;
     background: #f7f4f2;
     top: 30px;
     left: 15px;
@@ -89,4 +127,39 @@
     font-size: 14px;
     font-weight: 400;
     color: #111010;
+}
+
+.steps .container .steps-block .steps__list.active {
+    display: grid;
+}
+
+@media (max-width: 480px) {
+    .steps .container .steps-block .steps__list.active {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: start;
+        max-width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+ /* Firefox */
+        -ms-overflow-style: none;
+    }
+
+    .steps .container .steps-block .steps__list.active::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+        background: transparent;
+    }
+
+    .steps .container .steps-block .steps__list.active {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) and (max-width: 415px) {
+    .steps .container .steps-block .steps__list.active {
+        padding: 10px 14px;
+    }
 }

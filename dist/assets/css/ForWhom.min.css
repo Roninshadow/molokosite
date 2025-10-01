@@ -6,23 +6,48 @@
   padding: 30px;
   border-radius: 20px;
 }
+@media (max-width: 415px) {
+  .whom .container .whom__block {
+    padding: 30px 14px;
+  }
+}
 .whom .container .whom__block .whom__title {
   font-size: 22px;
   font-weight: 500;
   color: #111010;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .whom .container .whom__block .whom__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111010;
+  }
+}
 .whom .container .whom__block .whom__subtitle {
   font-size: 16px;
   font-weight: 400;
   color: #111010;
   max-width: 575px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+  .whom .container .whom__block .whom__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111010;
+  }
 }
 .whom .container .whom__block .whom__cards {
   display: flex;
   justify-content: space-between;
   gap: 14px;
+}
+@media (max-width: 768px) {
+  .whom .container .whom__block .whom__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .whom .container .whom__block .whom__cards .whom__card {
   padding: 14px;
@@ -31,6 +56,14 @@
   max-width: 230px;
   text-align: center;
   transition: 0.2s;
+}
+@media (max-width: 768px) {
+  .whom .container .whom__block .whom__cards .whom__card {
+    max-width: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
 .whom .container .whom__block .whom__cards .whom__card:hover {
   border-color: #ffff18;

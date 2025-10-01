@@ -1,5 +1,5 @@
 .reviews {
-    padding: 40px 0;
+    padding: 70px 0;
 }
 
 .reviews .container .reviews__title {
@@ -10,19 +10,42 @@
     margin-bottom: 40px;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list {
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
+.reviews .container .swiper {
+    position: relative;
+    overflow: hidden;
+    padding: 0 30px;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item {
+.reviews .container .swiper .swiper-button-next {
+    top: 180px;
+    right: 0;
+}
+
+.reviews .container .swiper .swiper-button-prev {
+    top: 180px;
+    left: 0;
+}
+
+.reviews .container .swiper .swiper-wrapper.reviews__list {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item {
     padding: 18px;
     background: #ffffff;
     border-radius: 10px;
+    min-width: 388px;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .rewievs__item-wrapper {
+@media (max-width: 415px) {
+    .reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item {
+        min-width: 300px;
+        padding: 18px 16px;
+    }
+}
+
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .rewievs__item-wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -32,13 +55,33 @@
     margin-bottom: 20px;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-description {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-client-ratting {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .reviews__item-image {
+    border-radius: 8px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    .reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .reviews__item-image {
+        height: 200px;
+    }
+}
+
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-client-description {
     font-size: 14px;
     font-weight: 400;
     color: #111010;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-btn {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-client-btn {
     padding: 10px 0;
     border-bottom: 1px dashed #b1abab;
     font-size: 16px;
@@ -49,43 +92,44 @@
     transition: 0.2s;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-btn:hover {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-client-btn:hover {
     color: #111010;
     border-color: #111010;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-btn {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-client-btn {
     margin-top: 20px;
+    padding-bottom: 0;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-clientInfo-name {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-clientInfo-name {
     font-size: 14px;
     font-weight: 600;
     color: #111010;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-clientInfo-type {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-clientInfo-type {
     font-size: 14px;
     font-weight: 400;
     color: #111010;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-clientInfo-company {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-clientInfo-company {
     font-size: 14px;
     font-weight: 400;
     color: #111010;
 }
 
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-ratting-stars {
-    display: -ms-flexbox;
-    display: flex;
-    gap: 4px;
-    height: 18px;
-}
-
-.reviews .container .slider .slider-wrapper.reviews__list .reviews__item .review__item-client-ratting-stars .review__item-client-ratting-date {
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-client-ratting-date {
     font-size: 14px;
     font-weight: 400;
     color: #111010;
     margin-top: 10px;
+}
+
+.reviews .container .swiper .swiper-wrapper.reviews__list .reviews__item .review__item-client-ratting-stars {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4px;
+    height: 18px;
 }

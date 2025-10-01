@@ -8,6 +8,12 @@
     border-radius: 20px;
 }
 
+@media (max-width: 415px) {
+    .articles .container .articles-block {
+        padding: 30px 14px;
+    }
+}
+
 .articles .container .articles-block .articles__title {
     text-align: center;
     font-size: 22px;
@@ -16,25 +22,39 @@
     margin-bottom: 40px;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list {
+.articles .container .articles-block .swiper {
+    position: relative;
+    overflow: hidden;
+}
+
+.articles .container .articles-block .articles__list {
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list .articles__item-image {
+.articles .container .articles-block .articles__list .articles__item {
+    min-width: 286px;
+}
+
+@media (max-width: 415px) {
+    .articles .container .articles-block .articles__list .articles__item {
+        min-width: 250px;
+    }
+}
+
+.articles .container .articles-block .articles__list .articles__item-image {
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list .articles__item-title {
+.articles .container .articles-block .articles__list .articles__item-title {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.3;
     color: #111010;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list .articles__item-description {
+.articles .container .articles-block .articles__list .articles__item-description {
     margin-top: 20px;
     font-size: 14px;
     font-weight: 400;
@@ -42,7 +62,7 @@
     margin-bottom: 20px;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list .articles__item-info {
+.articles .container .articles-block .articles__list .articles__item-info {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -51,7 +71,7 @@
     align-items: center;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list .articles__item-info .articles__item-info-date {
+.articles .container .articles-block .articles__list .articles__item-info .articles__item-info-date {
     font-size: 12px;
     font-weight: 400;
     color: #111010;
@@ -61,7 +81,7 @@
     color: #b1abab;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list .articles__item-info .articles__item-info-link {
+.articles .container .articles-block .articles__list .articles__item-info .articles__item-info-link {
     padding: 10px 0;
     border-bottom: 1px dashed #b1abab;
     font-size: 16px;
@@ -72,7 +92,14 @@
     transition: 0.2s;
 }
 
-.articles .container .articles-block .slider-wrapper.articles__list .articles__item-info .articles__item-info-link:hover {
+.articles .container .articles-block .articles__list .articles__item-info .articles__item-info-link:hover {
     color: #111010;
     border-color: #111010;
+}
+
+.articles .container .articles-block .articles__list .articles__item-info .articles__item-info-link {
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #111010;
 }

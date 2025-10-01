@@ -9,18 +9,29 @@
 			background: $white;
 			padding: 30px;
 			border-radius: 20px;
-
+			@media (max-width: 480px) {
+				padding: 25px 14px;
+				padding-bottom: 30px;
+			}
 			.WhyAreWe__title {
 				@include h2-22;
+				@media (max-width: 768px) {
+					@include h3-sem;
+				}
 			}
 
 			.WhyAreWe__list {
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
-				gap: 14px;
+				gap: 15px;
 				margin-top: 40px;
 				align-items: stretch;
-
+				@media (max-width: 768px) {
+					grid-template-columns: repeat(2,1fr);
+				}
+				@media (max-width: 480px) {
+					grid-template-columns: 1fr;
+				}
 				.WhyAreWe__item {
 					display: flex;
 					justify-content: center;
@@ -29,7 +40,14 @@
 					padding: 20px;
 					border-radius: 20px;
 					border: 1px solid $gray2;
+					height: 125px;
+					@media (max-width: 480px) {
+						height: auto;
+					}
 					@include med-16;
+					@media (max-width: 768px) {
+						@include reg-12;
+					}
 				}
 			}
 		}

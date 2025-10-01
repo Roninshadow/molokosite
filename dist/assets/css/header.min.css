@@ -2,6 +2,11 @@
   padding: 20px 0;
   background: #ffffff;
 }
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 0;
+  }
+}
 .header .container .header-wrapper {
   display: flex;
   align-items: center;
@@ -19,10 +24,18 @@
     font-size: 18px;
   }
 }
+.header .container .header-wrapper .header__logo {
+  padding: 6px 10px;
+}
 .header .container .header-wrapper .header__navList {
   display: flex;
   gap: 14px;
   align-items: center;
+}
+@media (max-width: 1024px) {
+  .header .container .header-wrapper .header__navList {
+    display: none;
+  }
 }
 .header .container .header-wrapper .header__navList .header__navItem {
   font-size: 16px;
@@ -40,6 +53,11 @@
   flex-direction: column;
   gap: 6px;
   align-items: start;
+}
+@media (max-width: 1024px) {
+  .header .container .header-wrapper .header__contacts {
+    display: none;
+  }
 }
 .header .container .header-wrapper .header__contacts .header__contact {
   font-size: 14px;
@@ -62,4 +80,42 @@
   -webkit-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+  .header .container .header-wrapper .header__btn {
+    display: none;
+  }
+}
+.header .container .header-wrapper .mob-pannel {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .header .container .header-wrapper .mob-pannel {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+.header .container .header-wrapper .mob-pannel .header__btn-mob {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #111010;
+  background: #ffff18;
+  border-radius: 40px;
+  transition: 0.2s;
+}
+.header .container .header-wrapper .mob-pannel .header__btn-mob:hover {
+  background: #111010;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.header .container .header-wrapper .mob-pannel .header__btn-mob {
+  padding: 6px 15px;
+}
+.header .container .header-wrapper .mob-pannel .header-burger-btn {
+  cursor: pointer;
 }

@@ -14,6 +14,13 @@
     border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+    .form .container .form__block {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .form .container .form__block .form__block-image {
     padding: 70px 42px;
 }
@@ -21,7 +28,7 @@
 .form .container .form__block .form__block-form {
     background: #ffffff;
     border-radius: 20px;
-    padding: 60px 30px;
+    padding: 62px 30px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -32,6 +39,12 @@
     width: 100%;
 }
 
+@media (max-width: 415px) {
+    .form .container .form__block .form__block-form {
+        padding: 30px 14px;
+    }
+}
+
 .form .container .form__block .form__block-form .form__block-form-title {
     font-size: 22px;
     font-weight: 500;
@@ -39,8 +52,16 @@
     margin-bottom: 16px;
 }
 
+@media (max-width: 768px) {
+    .form .container .form__block .form__block-form .form__block-form-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111010;
+    }
+}
+
 .form .container .form__block .form__block-form .form__block-form-input.name {
-    padding: 15px;
+    padding: 19px 15px;
     background: #f7f4f2;
     color: #b1abab;
     font-family: "Inter", sans-serif;
@@ -57,8 +78,15 @@
     width: 100%;
 }
 
+@media (max-width: 480px) {
+    .form .container .form__block .form__block-form .form__block-form-input.contacts-block {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .form .container .form__block .form__block-form .form__block-form-input.contacts-block .form__block-form-input.contacts {
-    padding: 15px;
+    padding: 19px 15px;
     background: #f7f4f2;
     color: #b1abab;
     font-family: "Inter", sans-serif;
@@ -69,7 +97,7 @@
 }
 
 .form .container .form__block .form__block-form .form__block-form-input.price {
-    padding: 15px;
+    padding: 19px 15px;
     background: #f7f4f2;
     color: #b1abab;
     font-family: "Inter", sans-serif;
@@ -99,4 +127,24 @@
 .form .container .form__block .form__block-form .form__block-form-btn {
     min-width: 270px;
     margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+    .form .container .form__block .form__block-form .form__block-form-btn {
+        width: 100%;
+    }
+}
+
+.mobile-text {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: inline;
+    }
 }
